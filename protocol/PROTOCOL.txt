@@ -1,0 +1,32 @@
+Quota-ledger audit: protocol fixed before token counts and admission results
+Date: 2026-10-11. This is a local prospective protocol, not a public preregistration.
+Question: Can language-dependent reservation error change measured access while
+violating the quota against which access is compared?
+Data: original FLORES-200 dev (997) and devtest (1012) aligned sentences.
+Languages fixed: eng_Latn fra_Latn deu_Latn spa_Latn arb_Arab hin_Deva ben_Beng
+zho_Hans jpn_Jpan swh_Latn tel_Telu mya_Mymr. Equal translated demand, not
+representative population traffic. No language inferred from users.
+Tokenizers: tiktoken cl100k_base, o200k_base, Qwen/Qwen2.5-0.5B frozen revision.
+Primary endpoint: input-only, matching embeddings reservation path. Counts are
+ordinary text with no special tokens. No model inference or output-quality claim.
+Main budgets: each key B=floor(f * English total held-out token demand),
+f in {0.25,0.5,0.75}; total budget 12B. This normalizes the experimental load,
+not a deployment policy. Workload order: common sentence permutation per seed,
+seeds 100..129. Settlement: burst (all admit decisions before reconciliation),
+serial (reconcile each accepted request before next admission).
+Policies: chars4 equal quotas (pinned LiteLLM estimator); exact equal quotas;
+UTF-8-byte conservative equal quotas; exact counts with dev-mean proportional
+quotas (integer largest-remainder allocation, sum exactly 12B).
+Metrics: admission fraction by language; max-minus-min admission gap; total
+admitted true input tokens / aggregate budget; per-key quota exceedance;
+total request count; paired-prefix exact parity frontier as an offline bound.
+Secondary: burst sizes 1,8,64,1012 at f=.5; 4-sentence blocks; language-skewed
+50% English aggregate calibration; perturbation of dev weights by +/-25%;
+paired sentence bootstrap, 1000 replicates, seed 2026 at f=.5, burst.
+Validation: brute-force small allocations and algebraic witnesses; actual Redis
+execution of unmodified extracted upstream admission/reconciliation Lua, versus
+simulator decisions on two full permutations; actual upstream estimator AST
+for supported input-only and plain completion payloads. Redis tests are
+component executions, not a full LiteLLM deployment or live provider audit.
+No primary parameters selected by observed effect sizes. Report all languages,
+tokenizers and registered conditions. Label subsequent additions exploratory.
