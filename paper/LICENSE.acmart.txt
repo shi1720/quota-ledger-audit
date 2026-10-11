@@ -1,0 +1,7 @@
+acmart.cls was extracted without changing its computational code from the
+Association for Computing Machinery's official acmart 2.20 documented source
+(2026/08/16), distributed at https://ctan.org/pkg/acmart . It is distributed
+under the LaTeX Project Public License, version 1.3c or later.
+ACM-Reference-Format.bst is from the same official release. Its own license
+notice is preserved in that file. No ownership of these files is claimed by
+the research author. See https://www.latex-project.org/lppl/ .

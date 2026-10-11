@@ -1,0 +1,43 @@
+{
+  "flores_sha256": {
+    "dev/eng_Latn.dev": "51a25f527fd81f428b6933d85a2f5e5544af92aa82042c7fbf0c4120327fba0a",
+    "dev/fra_Latn.dev": "7c1e1043b9d8cc6cb6fd4388ce068060f36518fd3597357a381cfdbe8ce5ab00",
+    "dev/deu_Latn.dev": "12fac774c6f79d966774a1829648a6e107700662e9e7b9e31ad08541382b97aa",
+    "dev/spa_Latn.dev": "9a99ddc459542da2d980b21cc049e799172545938cb02a5e7c92ebd8234b2121",
+    "dev/arb_Arab.dev": "abf6f8ae0a4a93e0a6855b9a42bc5a772fa0c72d11baaa0ff1c8650bea42fd6c",
+    "dev/hin_Deva.dev": "639d0f659eb74c98bcb82d0946495a7041d894dcd2c20a10daac54da9a935e22",
+    "dev/ben_Beng.dev": "aee7fe16ec08ee5997a1aeb85e6bba27072cbb108b193fa20ca9bfc084872f65",
+    "dev/zho_Hans.dev": "ae677073476a27d6d11db642df5c18b86ca5dfcbbeefeba7d99ec93b7f5bd177",
+    "dev/jpn_Jpan.dev": "17a422e2729f2eaecf7bf98aea70e3e72b8cac8acd72547d6ec1ada07ff92f4f",
+    "dev/swh_Latn.dev": "59c8ee7cb9a702f32ff3f3e6974f4465db63df0d7172fe0d53c8bd2405daa547",
+    "dev/tel_Telu.dev": "40024058eed171da4519636d391c751778dab53a1f2448c1bb96c38d3c3c31bd",
+    "dev/mya_Mymr.dev": "fb8aeaf0144f1236287645eb8e91733276907448ad50bcd978ff9309d26487b9",
+    "devtest/eng_Latn.devtest": "612e9fbe87997617c0fa8fa8929654a4f49b728d96738112c2b86ef6a1d78d88",
+    "devtest/fra_Latn.devtest": "82f5b000db419ef9254eea7857cce82943b361090942f17ed696e3dce2944f42",
+    "devtest/deu_Latn.devtest": "9a1bfa90d153fedb7ff80047f4a63d493998888eddb056e8a28e24592f26e5f2",
+    "devtest/spa_Latn.devtest": "40fcb836b49b0a461a14c00b8bce1f03113f8d2668132af424e74b2421d18ce9",
+    "devtest/arb_Arab.devtest": "ff09a52e63884e9b5bb1083780b58f37d3d14acb0c58c6b1f1f2544ecea12ff8",
+    "devtest/hin_Deva.devtest": "5f5fd39acadca29fb044a0398e81869e48f37de979df086f2fad4a7d1fd2d015",
+    "devtest/ben_Beng.devtest": "6699aa77b4c93d520971868cd5ff06a1e3b5ddfde852da13337f5194bc23086f",
+    "devtest/zho_Hans.devtest": "b30158b1b76f7cee08530d8127a9769f4512597c7eefe97ae1ccf630d5b6e7fd",
+    "devtest/jpn_Jpan.devtest": "36b8e392ae9404a20e8448c731d16d957ac1b94588d97fb691128ae706b63606",
+    "devtest/swh_Latn.devtest": "834ce9e5f48893505f9d69dec24da2545be4323e841fb23440e36c62c5d61ee4",
+    "devtest/tel_Telu.devtest": "2dc641b4fb69347efe4b0c0f2063372c643f20c664b41a1f4421b69ba2a06420",
+    "devtest/mya_Mymr.devtest": "bbccb36a909003dfbaf68cf59b63729769cab723a0f90a85f68efd9ded7b1512"
+  },
+  "qwen_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "qwen_tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "source_commit": "e0398455d09f87c22cb168f5be26eee4c3da1ce0",
+  "source_sha256": "3d566af7022900166e138353faf2382687d9b1ade0c8435f942813368d163ac6",
+  "packages": {
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.4",
+    "tiktoken": "0.14.0",
+    "tokenizers": "0.22.2",
+    "huggingface_hub": "1.8.0",
+    "redis": "7.0.1",
+    "pytest": "8.4.2"
+  }
+}

@@ -1,0 +1,19 @@
+All headline results use fraction=.5, batch=1012 and all seeds 100..129.
+- 24,108 texts / 72,324 tokenizer evaluations: results/token_counts.csv rows,
+  multiplied by three tokenizer count columns.
+- 2,880 main replays / 34,974,720 decisions: results/replays.csv rows * 1012 * 12.
+- 49.48% admission and 3.367x budget, cl100k chars4: mean admission and
+  budget_ratio in results/replays.csv under the headline filter.
+- 7.813x maximum key usage: mean max_key_ratio under the same filter;
+  language_results.csv identifies Burmese as the maximum in this condition.
+- 45.80pp exact gap and .56pp calibrated gap: mean gap * 100 under corresponding
+  policy filters. No inference that all language communities have these gaps.
+- 40.4% throughput loss: 1 - mean admission(calibrated)/mean admission(exact).
+- 291,456 runtime decisions: results/redis_validation.json; 24 matching admission
+  array digests, plus assertions on every final key counter.
+- Paired-bootstrap interval: results/bootstrap.csv, quantiles .008333333 and
+  .991666667; generated automatically into paper/bootstrap_table.tex.
+- Exact prefix/cheapest-count benchmarks: results/frontiers.csv. Prefix holds
+  task order and translated task identity; cheapest-count permits content choice.
+- Primary effects are deterministic conditional on counts, order, and policy.
+  Thirty orders and bootstraps are not millions of independent social samples.

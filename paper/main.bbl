@@ -1,0 +1,273 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{15}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter does
+%%% not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+\makeatletter
+\@ifundefined{NAT@parse@date}{}{\let\NAT@parse@date@orig\NAT@parse@date}
+\@ifundefined{NAT@parse@date}{}{\def\NAT@parse@date#1#2#3#4#5#6@@{\NAT@parse@date@orig#1#2#3#4#5#6@@\def\NAT@tempyear{0000}\def\NAT@tempexlab{{?}}\ifx\NAT@year\NAT@tempyear\ifx\NAT@exlab\NAT@tempexlab\def\NAT@date{[n.\,d.]}\else\edef\NAT@date{[n.\,d.]\NAT@exlab}\fi\fi}}
+\makeatother
+
+\bibitem[Ahia et~al\mbox{.}(2023)]%
+        {ahia-etal-2023-languages}
+\bibfield{author}{\bibinfo{person}{Orevaoghene Ahia}, \bibinfo{person}{Sachin
+  Kumar}, \bibinfo{person}{Hila Gonen}, \bibinfo{person}{Jungo Kasai},
+  \bibinfo{person}{David Mortensen}, \bibinfo{person}{Noah Smith}, {and}
+  \bibinfo{person}{Yulia Tsvetkov}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Do All Languages Cost the Same? Tokenization in the
+  Era of Commercial Language Models}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 2023 Conference on Empirical Methods in Natural Language Processing}},
+  \bibfield{editor}{\bibinfo{person}{Houda Bouamor}, \bibinfo{person}{Juan
+  Pino}, {and} \bibinfo{person}{Kalika Bali}} (Eds.).
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Singapore}, \bibinfo{pages}{9904--9923}.
+\newblock
+\href{https://doi.org/10.18653/v1/2023.emnlp-main.614}{doi:\nolinkurl{10.18653/v1/2023.emnlp-main.614}}
+
+
+\bibitem[{BerriAI}(2026a)]%
+        {litellmdocs}
+\bibfield{author}{\bibinfo{person}{{BerriAI}}.}
+  \bibinfo{year}{2026}\natexlab{a}.
+\newblock \bibinfo{title}{Budgets, Rate Limits}.
+\newblock
+\urldef\tempurl%
+\url{https://docs.litellm.ai/docs/proxy/users}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed 11 October 2026}.
+
+
+\bibitem[{BerriAI}(2026b)]%
+        {litellm}
+\bibfield{author}{\bibinfo{person}{{BerriAI}}.}
+  \bibinfo{year}{2026}\natexlab{b}.
+\newblock \bibinfo{title}{{LiteLLM}: Parallel Request Limiter v3}.
+\newblock
+\urldef\tempurl%
+\url{https://github.com/BerriAI/litellm/blob/e0398455d09f87c22cb168f5be26eee4c3da1ce0/litellm/proxy/hooks/parallel_request_limiter_v3.py}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Pinned commit e0398455d09f87c22cb168f5be26eee4c3da1ce0; accessed 11
+  October 2026}.
+
+
+\bibitem[Blodgett et~al\mbox{.}(2020)]%
+        {blodgett-etal-2020-language}
+\bibfield{author}{\bibinfo{person}{Su~Lin Blodgett}, \bibinfo{person}{Solon
+  Barocas}, \bibinfo{person}{Hal Daum{\'e}~III}, {and} \bibinfo{person}{Hanna
+  Wallach}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Language (Technology) is Power: A Critical Survey
+  of ``Bias'' in {NLP}}. In \bibinfo{booktitle}{\emph{Proceedings of the 58th
+  Annual Meeting of the Association for Computational Linguistics}},
+  \bibfield{editor}{\bibinfo{person}{Dan Jurafsky}, \bibinfo{person}{Joyce
+  Chai}, \bibinfo{person}{Natalie Schluter}, {and} \bibinfo{person}{Joel
+  Tetreault}} (Eds.). \bibinfo{publisher}{Association for Computational
+  Linguistics}, \bibinfo{address}{Online}, \bibinfo{pages}{5454--5476}.
+\newblock
+\href{https://doi.org/10.18653/v1/2020.acl-main.485}{doi:\nolinkurl{10.18653/v1/2020.acl-main.485}}
+
+
+\bibitem[Joshi et~al\mbox{.}(2020)]%
+        {joshi-etal-2020-state}
+\bibfield{author}{\bibinfo{person}{Pratik Joshi}, \bibinfo{person}{Sebastin
+  Santy}, \bibinfo{person}{Amar Budhiraja}, \bibinfo{person}{Kalika Bali},
+  {and} \bibinfo{person}{Monojit Choudhury}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{The State and Fate of Linguistic Diversity and
+  Inclusion in the {NLP} World}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the 58th Annual Meeting of the Association for Computational Linguistics}},
+  \bibfield{editor}{\bibinfo{person}{Dan Jurafsky}, \bibinfo{person}{Joyce
+  Chai}, \bibinfo{person}{Natalie Schluter}, {and} \bibinfo{person}{Joel
+  Tetreault}} (Eds.). \bibinfo{publisher}{Association for Computational
+  Linguistics}, \bibinfo{address}{Online}, \bibinfo{pages}{6282--6293}.
+\newblock
+\href{https://doi.org/10.18653/v1/2020.acl-main.560}{doi:\nolinkurl{10.18653/v1/2020.acl-main.560}}
+
+
+\bibitem[Khan et~al\mbox{.}(2024)]%
+        {khan2024}
+\bibfield{author}{\bibinfo{person}{Redwan Ibne~Seraj Khan},
+  \bibinfo{person}{Kunal Jain}, \bibinfo{person}{Haiying Shen},
+  \bibinfo{person}{Ankur Mallick}, \bibinfo{person}{Anjaly Parayil},
+  \bibinfo{person}{Anoop Kulkarni}, \bibinfo{person}{Steve Kofsky},
+  \bibinfo{person}{Pankhuri Choudhary}, \bibinfo{person}{Ren{\`e}e~St. Amant},
+  \bibinfo{person}{Rujia Wang}, \bibinfo{person}{Yue Cheng},
+  \bibinfo{person}{Ali~R. Butt}, \bibinfo{person}{Victor R{\"u}hle},
+  \bibinfo{person}{Chetan Bansal}, {and} \bibinfo{person}{Saravan Rajmohan}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Ensuring Fair {LLM} Serving Amid Diverse
+  Applications}.
+\newblock
+\showeprint[arxiv]{2411.15997}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2411.15997}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{Kong}(2026)]%
+        {kong}
+\bibfield{author}{\bibinfo{person}{{Kong}}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{AI} Rate Limiting Advanced}.
+\newblock
+\urldef\tempurl%
+\url{https://docs.konghq.com/hub/kong-inc/ai-rate-limiting-advanced/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Documentation comparison only; accessed 11 October 2026}.
+
+
+\bibitem[{Meta AI}(2022)]%
+        {flores}
+\bibfield{author}{\bibinfo{person}{{Meta AI}}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{{FLORES}-200 Evaluation Benchmark}.
+\newblock
+\urldef\tempurl%
+\url{https://github.com/facebookresearch/flores/tree/main/flores200}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Original dataset; accessed 11 October 2026. CC BY-SA 4.0}.
+
+
+\bibitem[{NLLB Team}(2024)]%
+        {nllb2024}
+\bibfield{author}{\bibinfo{person}{{NLLB Team}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Scaling Neural Machine Translation to 200
+  Languages}.
+\newblock \bibinfo{journal}{\emph{Nature}}  \bibinfo{volume}{630}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{841--846}.
+\newblock
+\href{https://doi.org/10.1038/s41586-024-07335-x}{doi:\nolinkurl{10.1038/s41586-024-07335-x}}
+
+
+\bibitem[{OpenAI}(2026)]%
+        {tiktoken}
+\bibfield{author}{\bibinfo{person}{{OpenAI}}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{tiktoken}.
+\newblock
+\urldef\tempurl%
+\url{https://github.com/openai/tiktoken}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Encoding tables and installed package version recorded in the
+  artifact}.
+
+
+\bibitem[Petrov et~al\mbox{.}(2023)]%
+        {petrov2023}
+\bibfield{author}{\bibinfo{person}{Aleksandar Petrov},
+  \bibinfo{person}{Emanuele~La Malfa}, \bibinfo{person}{Philip H.~S. Torr},
+  {and} \bibinfo{person}{Adel Bibi}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Language Model Tokenizers Introduce Unfairness
+  Between Languages}. In \bibinfo{booktitle}{\emph{Advances in Neural
+  Information Processing Systems}}, Vol.~\bibinfo{volume}{36}.
+\newblock
+\urldef\tempurl%
+\url{https://papers.nips.cc/paper_files/paper/2023/hash/74bb24dca8334adce292883b4b651eda-Abstract-Conference.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{Qwen Team}(2024)]%
+        {qwen}
+\bibfield{author}{\bibinfo{person}{{Qwen Team}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{{Qwen2.5}-0.5B Tokenizer}.
+\newblock
+\urldef\tempurl%
+\url{https://huggingface.co/Qwen/Qwen2.5-0.5B/tree/060db6499f32faf8b98477b0a26969ef7d8b9987}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Tokenizer-only evaluation; model weights not used}.
+
+
+\bibitem[Rust et~al\mbox{.}(2021)]%
+        {rust-etal-2021-good}
+\bibfield{author}{\bibinfo{person}{Phillip Rust}, \bibinfo{person}{Jonas
+  Pfeiffer}, \bibinfo{person}{Ivan Vuli{\'c}}, \bibinfo{person}{Sebastian
+  Ruder}, {and} \bibinfo{person}{Iryna Gurevych}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{How Good is Your Tokenizer? On the Monolingual
+  Performance of Multilingual Language Models}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 59th Annual Meeting of the
+  Association for Computational Linguistics and the 11th International Joint
+  Conference on Natural Language Processing (Volume 1: Long Papers)}},
+  \bibfield{editor}{\bibinfo{person}{Chengqing Zong}, \bibinfo{person}{Fei
+  Xia}, \bibinfo{person}{Wenjie Li}, {and} \bibinfo{person}{Roberto Navigli}}
+  (Eds.). \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Online}, \bibinfo{pages}{3118--3135}.
+\newblock
+\href{https://doi.org/10.18653/v1/2021.acl-long.243}{doi:\nolinkurl{10.18653/v1/2021.acl-long.243}}
+
+
+\bibitem[Selbst et~al\mbox{.}(2019)]%
+        {selbst2019}
+\bibfield{author}{\bibinfo{person}{Andrew~D. Selbst}, \bibinfo{person}{danah
+  boyd}, \bibinfo{person}{Sorelle~A. Friedler}, \bibinfo{person}{Suresh
+  Venkatasubramanian}, {and} \bibinfo{person}{Janet Vertesi}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Fairness and Abstraction in Sociotechnical
+  Systems}. In \bibinfo{booktitle}{\emph{Proceedings of the Conference on
+  Fairness, Accountability, and Transparency}}. \bibinfo{pages}{59--68}.
+\newblock
+\href{https://doi.org/10.1145/3287560.3287598}{doi:\nolinkurl{10.1145/3287560.3287598}}
+
+
+\bibitem[Sheng et~al\mbox{.}(2024)]%
+        {sheng2024}
+\bibfield{author}{\bibinfo{person}{Ying Sheng}, \bibinfo{person}{Shiyi Cao},
+  \bibinfo{person}{Dacheng Li}, \bibinfo{person}{Banghua Zhu},
+  \bibinfo{person}{Zhuohan Li}, \bibinfo{person}{Danyang Zhuo},
+  \bibinfo{person}{Joseph~E. Gonzalez}, {and} \bibinfo{person}{Ion Stoica}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Fairness in Serving Large Language Models}. In
+  \bibinfo{booktitle}{\emph{18th USENIX Symposium on Operating Systems Design
+  and Implementation (OSDI 24)}}. \bibinfo{pages}{965--988}.
+\newblock
+\urldef\tempurl%
+\url{https://www.usenix.org/conference/osdi24/presentation/sheng}
+\showURL{%
+\tempurl}
+
+
+\end{thebibliography}

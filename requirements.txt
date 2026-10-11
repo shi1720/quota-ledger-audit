@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+matplotlib
+tiktoken
+tokenizers
+huggingface_hub
+redis
+pytest

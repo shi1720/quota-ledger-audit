@@ -1,0 +1,80 @@
+Literature and overlap audit, 11 October 2026
+
+Bounded contribution: an executable audit of multilingual input-token admission
+across reservation estimates and settled true-token ledgers, with controlled
+translation demand, settlement-delay sensitivity, exact parity benchmarks,
+and capacity-preserving separate-data entitlement calibration.
+
+Closest work inspected
+Petrov, La Malfa, Torr, Bibi (NeurIPS 2023), Language Model Tokenizers Introduce
+Unfairness Between Languages. Establishes unequal multilingual token lengths,
+price/latency/context effects. We do not claim this discovery. Searched full
+paper text for rate limit and quota: no occurrences. Our operational distinction
+is reservation error plus delayed reconciliation and joint feasibility/access.
+https://papers.nips.cc/paper_files/paper/2023/hash/74bb24dca8334adce292883b4b651eda-Abstract-Conference.html
+
+Ahia et al. (EMNLP 2023), Do All Languages Cost the Same? Tokenization in the Era
+of Commercial Language Models. Commercial tokenization cost predecessor.
+https://aclanthology.org/2023.emnlp-main.614/
+
+Sheng et al. (OSDI 2024), Fairness in Serving Large Language Models. Token-cost
+fair scheduler, VTC. We do not invent fair LLM serving or compare a quota test
+to a GPU scheduler. The estimands and execution layers differ.
+https://www.usenix.org/conference/osdi24/presentation/sheng
+
+Khan et al. (2024 arXiv preprint), Ensuring Fair LLM Serving Amid Diverse
+Applications. Application-aware throttling and weighted scheduling. Important
+precedent for workload normalization; our calibrated weights are not a new
+scheduling primitive. Full paper inspected, including fairness/application
+sections; no tokenizer discussion found by text search.
+https://arxiv.org/abs/2411.15997
+
+Rust et al. (ACL 2021), How Good is Your Tokenizer? On the Monolingual Performance
+of Multilingual Language Models. Tokenizer quality predecessor.
+https://aclanthology.org/2021.acl-long.243/
+
+Joshi et al. (ACL 2020), The State and Fate of Linguistic Diversity and Inclusion
+in the NLP World. Resource/representation context.
+https://aclanthology.org/2020.acl-main.560/
+
+Blodgett et al. (ACL 2020), Language (Technology) is Power: A Critical Survey of
+Bias in NLP. Grounds restricted claims and identification of harm mechanisms.
+https://aclanthology.org/2020.acl-main.485/
+
+Selbst et al. (FAT* 2019), Fairness and Abstraction in Sociotechnical Systems.
+Grounds distinction between resource measurement and institutional allocation.
+https://doi.org/10.1145/3287560.3287598
+
+Production architecture: pinned LiteLLM source, upstream reservation/reconciliation
+documentation, and Kong token-counting documentation. Only LiteLLM components
+were executed. No vulnerability, market prevalence, or malicious intent claimed.
+
+Search families included:
+- fairness rate limits language tokenization admission
+- multilingual admission control LLM
+- multilingual rate limiting fairness tokenizer
+- language character rate limit token fairness audit
+- FairServe application fairness LLM
+- fair serving tokenizer cost token reservations
+Earlier topic candidates on entity-resolution uncertainty, missing demographics,
+and complaint-data selection were rejected because substantial related work and
+less convincing differentiation were immediately apparent. Those are not paper
+contributions and their literature is not used as support for the final topic.
+
+Local prior-work overlap
+Reviewed the research-folder inventory and extracted text/abstracts for all
+available PDFs. Existing themes: stochastic tool cache coupling; KL retry
+reliability; delegation inference; personal memory; prefix-cache retention;
+financial exposure routing; deposit control; effect-scoped compensation;
+capped/collective/private agent contracts; noisy-feedback bandits; remedy tool
+exposure; safe observation scheduling; shared-label evaluation; coherent
+counterfactual replay. The present paper concerns admission quota measurement
+and multilingual entitlements, distinct in estimand, data, code, and experiments.
+Prefix-cache work shares a broad infrastructure setting but not its optimization
+problem. Remedy-access work shares an access concern but tests tool exposure,
+not token reservation or translated content. No old paper is resubmitted here.
+
+Limits: this is a targeted search, not an exhaustive systematic review or patent
+clearance. Absence of a returned result is not proof of global novelty. The
+paper's contribution is expressly restricted and avoids a claim of inventing
+weighted allocation, tokenization inequity, or accounting conservation.
